@@ -40,7 +40,7 @@
         android:layout_marginTop="88dp"
         android:ems="10"
         android:hint="@string/msg"
-        android:inputType="number"
+        android:inputType="number|text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,8 +64,8 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="139dp"
-        android:layout_height="53dp"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
         android:gravity="center"
         android:text="Result here"
         android:textSize="24sp"
