@@ -36,15 +36,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (TextUtils.isDigitsOnly(input1.getText().toString())
                         && TextUtils.isDigitsOnly(input1.getText().toString())
+                        && !TextUtils.isEmpty(input1.getText().toString())
+                        && !TextUtils.isEmpty(input1.getText().toString())
                 ) {
                     double n1 = Double.parseDouble(input1.getText().toString());
                     double n2 = Double.parseDouble(input2.getText().toString());
                     myResult.setText("Result " + (n1 + n2));
                     myResult.setTextColor(getColor(R.color.purple_700));
+                    input1.setText("");
+                    input2.setText("");
 
                     Toast.makeText(getApplicationContext(), "operation done", Toast.LENGTH_LONG).show();
                 }else {
-
+                    input1.setText("");
+                    input2.setText("");
                     myResult.setTextColor(Color.RED);
                     myResult.setText("please enter a number");
                     Toast.makeText(getApplicationContext(), "ERROR", Toast.LENGTH_LONG).show();
