@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
                     double n2 = Double.parseDouble(input2.getText().toString());
                     myResult.setText("Result " + (n1 + n2));
                     myResult.setTextColor(getColor(R.color.purple_700));
+
                     input1.setText("");
                     input2.setText("");
-
                     Toast.makeText(getApplicationContext(), "operation done", Toast.LENGTH_LONG).show();
                 }else {
                     input1.setText("");
@@ -60,4 +60,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
 }
